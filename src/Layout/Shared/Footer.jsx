@@ -7,7 +7,7 @@ const Footer = () => {
                     width="50"
                     height="50"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://i.postimg.cc/XJ8qypbS/prime1.png"
                     fillRule="evenodd"
                     clipRule="evenodd"
                     className="inline-block fill-current">

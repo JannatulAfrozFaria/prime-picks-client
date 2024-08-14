@@ -8,7 +8,7 @@ const Footer = () => {
                     <p className="font-bold">
                     <span className="edu text-3xl">Prime Picks Ltd.</span>
                     <br />
-                    Providing reliable tech since 1998
+                    Providing reliable medical service since 1998
                     </p>
                     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
                 </aside>

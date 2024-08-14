@@ -34,7 +34,9 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <img className=""
+                     src="https://i.postimg.cc/XJ8qypbS/prime1.png" alt="prime picks logo" />
+                    <a className="btn btn-ghost text-xl">Prime Picks</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

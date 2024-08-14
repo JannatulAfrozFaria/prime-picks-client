@@ -1,8 +1,9 @@
+import Banner from "./Banner";
 
 const Home = () => {
     return (
-        <div>
-            This is a Pharma website
+        <div className="mt-3 md:mt-8">
+            <Banner></Banner>
         </div>
     );
 };

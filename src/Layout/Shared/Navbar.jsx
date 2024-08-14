@@ -1,9 +1,16 @@
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
+    const NavOptions = <>
+        <li><Link to="/"><a href="">Home</a></Link> </li>
+        <li><Link to="/joinAsEmployee"><a href="">Register</a></Link> </li>
+        <li><Link to="/joinAsManager"><a href="">Login</a></Link> </li>
+        {/* <li><Link to="/dashboard/profile"><a href="">Dashboard</a></Link> </li> */}
+    </>
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className="shadow-lg poppins">
+            <div className="navbar bg-base-100 max-w-screen-xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,41 +30,25 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                        <a>Parent</a>
-                        <ul className="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        {NavOptions}
                     </ul>
                     </div>
-                    <img className=""
+                    <img className="w-16"
                      src="https://i.postimg.cc/XJ8qypbS/prime1.png" alt="prime picks logo" />
-                    <a className="btn btn-ghost text-xl">Prime Picks</a>
+                    <a className="btn btn-ghost text-xl md:text-2xl edu base">Prime Picks</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                        <summary>Parent</summary>
-                        <ul className="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                        {NavOptions}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                {/* <div className="navbar-end">
                     <a className="btn">Button</a>
-                </div>
+                </div> */}
+                
                 {/* Profile Starts*/}
-                <div className="dropdown dropdown-end">
+                <div className="navbar-end">
+                    <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                         <img
@@ -77,6 +68,7 @@ const Navbar = () => {
                         <li><a>Settings</a></li>
                         <li><a>Logout</a></li>
                     </ul>
+                    </div>
                 </div>
                 {/* Profile Icon ENds */}
             </div>

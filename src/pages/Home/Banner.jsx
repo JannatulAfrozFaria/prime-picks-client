@@ -4,7 +4,7 @@ const Banner = () => {
         <div>
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
-                    <div className="hero min-h-screen" style={{backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+                    <div className="hero min-h-screen" style={{backgroundImage: "url(../src/assets/banner/1.PNG)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-neutral-content text-center">

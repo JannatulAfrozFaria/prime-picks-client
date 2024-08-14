@@ -26,3 +26,6 @@
 .base{
   color: rgb(34, 145, 145);
 }
+.bg1{
+background-image: url(../src/assets/banner/1.PNG);
+}

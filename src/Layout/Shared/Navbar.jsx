@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="shadow-lg poppins bg-black bg-opacity-30 fixed z-10 w-full mx-auto">
             <div className="navbar max-w-screen-xl mx-auto">
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown text-white">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"

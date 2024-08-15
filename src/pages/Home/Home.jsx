@@ -5,7 +5,9 @@ const Home = () => {
     return (
         <div className="">
             <Banner></Banner>
-            <MedicineSection></MedicineSection>
+            <div className="max-w-screen-xl mx-auto">
+                <MedicineSection></MedicineSection>
+            </div>
         </div>
     );
 };

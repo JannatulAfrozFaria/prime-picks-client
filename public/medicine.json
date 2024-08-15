@@ -6,7 +6,7 @@
       "categoryName": "Pain Reliever",
       "price": 5.99,
       "dateAdded": "2024/07/01",
-      "image": "https://example.com/images/paracetamol.jpg"
+      "image": "https://i.postimg.cc/8kLpSYhZ/paracetamol.jpg"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "categoryName": "Pain Reliever",
       "price": 6.99,
       "dateAdded": "2024/07/03",
-      "image": "https://example.com/images/ibuprofen.jpg"
+      "image": "https://i.postimg.cc/d3sGqCKk/ibuporfen.jpg"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "categoryName": "Pain Reliever",
       "price": 4.99,
       "dateAdded": "2024/07/05",
-      "image": "https://example.com/images/aspirin.jpg"
+      "image": "https://i.postimg.cc/J4tBPM7L/Aspirin.gif"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "categoryName": "Pain Reliever",
       "price": 7.49,
       "dateAdded": "2024/07/07",
-      "image": "https://example.com/images/naproxen.jpg"
+      "image": "https://i.postimg.cc/ryHKmnjB/naproxen2.png"
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
       "categoryName": "Allergy Relief",
       "price": 8.99,
       "dateAdded": "2024/06/30",
-      "image": "https://example.com/images/cetirizine.jpg"
+      "image": "https://i.postimg.cc/g2h9yXf6/Cetirizine1.png"
     },
     {
       "id": 6,
@@ -51,7 +51,7 @@
       "categoryName": "Allergy Relief",
       "price": 9.49,
       "dateAdded": "2024/07/02",
-      "image": "https://example.com/images/loratadine.jpg"
+      "image": "https://i.postimg.cc/HLMtZ8xx/loratadin1.png"
     },
     {
       "id": 7,
@@ -60,7 +60,7 @@
       "categoryName": "Allergy Relief",
       "price": 10.99,
       "dateAdded": "2024/07/04",
-      "image": "https://example.com/images/fexofenadine.jpg"
+      "image": "https://i.postimg.cc/Kzk4rtvq/Fexofenadine3.png"
     },
     {
       "id": 8,
@@ -69,7 +69,7 @@
       "categoryName": "Allergy Relief",
       "price": 11.99,
       "dateAdded": "2024/07/06",
-      "image": "https://example.com/images/levocetirizine.jpg"
+      "image": "https://i.postimg.cc/MZBvn0LX/levocetirizine.png"
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "categoryName": "Digestive Health",
       "price": 12.49,
       "dateAdded": "2024/06/25",
-      "image": "https://example.com/images/omeprazole.jpg"
+      "image": "https://i.postimg.cc/qv77LLpZ/omeprazole.png"
     },
     {
       "id": 10,
@@ -87,7 +87,7 @@
       "categoryName": "Digestive Health",
       "price": 13.99,
       "dateAdded": "2024/06/28",
-      "image": "https://example.com/images/pantoprazole.jpg"
+      "image": "https://i.postimg.cc/dQmtcX1x/pantoprazole.png"
     },
     {
       "id": 11,
@@ -96,7 +96,7 @@
       "categoryName": "Digestive Health",
       "price": 9.99,
       "dateAdded": "2024/06/30",
-      "image": "https://example.com/images/ranitidine.jpg"
+      "image": "https://i.postimg.cc/9MPVVRW7/Ranitidin-line.png"
     },
     {
       "id": 12,
@@ -105,7 +105,7 @@
       "categoryName": "Digestive Health",
       "price": 14.99,
       "dateAdded": "2024/07/03",
-      "image": "https://example.com/images/esomeprazole.jpg"
+      "image": "https://i.postimg.cc/VvLy8KGx/esomeprazole.png"
     },
     {
       "id": 13,

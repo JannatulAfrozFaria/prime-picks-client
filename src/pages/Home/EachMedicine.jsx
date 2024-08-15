@@ -1,20 +1,19 @@
 
 
 const EachMedicine = ({medicine}) => {
-    const {id,image,price,date} = medicine;
+    const {id,image,medicineName,brandName,categoryName,price,dateAdded} = medicine;
     return (
-        <div>
-            <div className="card bg-base-100 w-96 shadow-xl">
-                <figure>
-                    <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+        <div className="bg-base-100 w-full shadow-xl">
+            <div className="grid grid-cols-5">
+                <div className="col-span-2"><img className="h-[180px] w-full" src={image} alt="medicine" /></div>
+                <div className="col-span-3 py-2 px-4">
+                    <h2 className="card-title">{medicineName}</h2>
+                    <div className="text-sm">
+                        <p> <span className="poppins text-cyan-600">Brand : </span> {brandName}</p>
+                        <p> <span className="poppins text-cyan-600">Category : </span> {categoryName}</p>
+                        <p> <span className="poppins text-cyan-600">Price: </span>  <span className="poppins text-yellow-600 ">$ </span>{price}</p>
+                        <p> <span className="poppins text-cyan-600">Date of Addition : </span> {dateAdded}</p>
+                        <button className="btn btn-basic btn-sm my-2">View Details</button>
                     </div>
                 </div>
             </div>

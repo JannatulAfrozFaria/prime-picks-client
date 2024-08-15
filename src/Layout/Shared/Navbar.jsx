@@ -9,7 +9,7 @@ const Navbar = () => {
         {/* <li><Link to="/dashboard/profile"><a href="">Dashboard</a></Link> </li> */}
     </>
     return (
-        <div className="shadow-lg poppins bg-black bg-opacity-30 fixed z-10 w-full mx-auto">
+        <div className="shadow-lg poppins bg-black bg-opacity-50 fixed z-10 w-full mx-auto">
             <div className="navbar max-w-screen-xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown text-white">

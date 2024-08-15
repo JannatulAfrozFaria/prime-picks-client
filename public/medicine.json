@@ -1,259 +1,363 @@
 [
     {
+      "id": 1,
       "medicineName": "Paracetamol",
       "brandName": "HealthCare",
       "categoryName": "Pain Reliever",
-      "price": 6.50,
+      "price": 5.99,
       "dateAdded": "2024/07/01",
-      "image": "https://i.postimg.cc/8kLpSYhZ/paracetamol.jpg"
+      "image": "https://example.com/images/paracetamol.jpg"
     },
     {
+      "id": 2,
       "medicineName": "Ibuprofen",
       "brandName": "HealthCare",
       "categoryName": "Pain Reliever",
-      "price": 7.50,
+      "price": 6.99,
       "dateAdded": "2024/07/03",
       "image": "https://example.com/images/ibuprofen.jpg"
     },
     {
+      "id": 3,
       "medicineName": "Aspirin",
       "brandName": "HealthCare",
       "categoryName": "Pain Reliever",
-      "price": 5.00,
+      "price": 4.99,
       "dateAdded": "2024/07/05",
       "image": "https://example.com/images/aspirin.jpg"
     },
     {
+      "id": 4,
       "medicineName": "Naproxen",
       "brandName": "HealthCare",
       "categoryName": "Pain Reliever",
-      "price": 7.50,
+      "price": 7.49,
       "dateAdded": "2024/07/07",
       "image": "https://example.com/images/naproxen.jpg"
     },
     {
+      "id": 5,
       "medicineName": "Cetirizine",
       "brandName": "AllergyGuard",
       "categoryName": "Allergy Relief",
-      "price": 8.50,
+      "price": 8.99,
       "dateAdded": "2024/06/30",
       "image": "https://example.com/images/cetirizine.jpg"
     },
     {
+      "id": 6,
       "medicineName": "Loratadine",
       "brandName": "AllergyGuard",
       "categoryName": "Allergy Relief",
-      "price": 9.50,
+      "price": 9.49,
       "dateAdded": "2024/07/02",
       "image": "https://example.com/images/loratadine.jpg"
     },
     {
+      "id": 7,
       "medicineName": "Fexofenadine",
       "brandName": "AllergyGuard",
       "categoryName": "Allergy Relief",
-      "price": 10.50,
+      "price": 10.99,
       "dateAdded": "2024/07/04",
       "image": "https://example.com/images/fexofenadine.jpg"
     },
     {
+      "id": 8,
       "medicineName": "Levocetirizine",
       "brandName": "AllergyGuard",
       "categoryName": "Allergy Relief",
-      "price": 11.00,
+      "price": 11.99,
       "dateAdded": "2024/07/06",
       "image": "https://example.com/images/levocetirizine.jpg"
     },
     {
+      "id": 9,
       "medicineName": "Omeprazole",
       "brandName": "DigestWell",
       "categoryName": "Digestive Health",
-      "price": 12.00,
+      "price": 12.49,
       "dateAdded": "2024/06/25",
       "image": "https://example.com/images/omeprazole.jpg"
     },
     {
+      "id": 10,
       "medicineName": "Pantoprazole",
       "brandName": "DigestWell",
       "categoryName": "Digestive Health",
-      "price": 13.50,
+      "price": 13.99,
       "dateAdded": "2024/06/28",
       "image": "https://example.com/images/pantoprazole.jpg"
     },
     {
+      "id": 11,
       "medicineName": "Ranitidine",
       "brandName": "DigestWell",
       "categoryName": "Digestive Health",
-      "price": 9.50,
+      "price": 9.99,
       "dateAdded": "2024/06/30",
       "image": "https://example.com/images/ranitidine.jpg"
     },
     {
+      "id": 12,
       "medicineName": "Esomeprazole",
       "brandName": "DigestWell",
       "categoryName": "Digestive Health",
-      "price": 14.00,
+      "price": 14.99,
       "dateAdded": "2024/07/03",
       "image": "https://example.com/images/esomeprazole.jpg"
     },
     {
+      "id": 13,
       "medicineName": "Metformin",
       "brandName": "GlucoCare",
       "categoryName": "Diabetes Care",
-      "price": 15.50,
+      "price": 15.99,
       "dateAdded": "2024/06/20",
       "image": "https://example.com/images/metformin.jpg"
     },
     {
+      "id": 14,
       "medicineName": "Glipizide",
       "brandName": "GlucoCare",
       "categoryName": "Diabetes Care",
-      "price": 16.00,
+      "price": 16.99,
       "dateAdded": "2024/06/23",
       "image": "https://example.com/images/glipizide.jpg"
     },
     {
+      "id": 15,
       "medicineName": "Glyburide",
       "brandName": "GlucoCare",
       "categoryName": "Diabetes Care",
-      "price": 14.00,
+      "price": 14.99,
       "dateAdded": "2024/06/26",
       "image": "https://example.com/images/glyburide.jpg"
     },
     {
+      "id": 16,
       "medicineName": "Insulin Glargine",
       "brandName": "GlucoCare",
       "categoryName": "Diabetes Care",
-      "price": 24.50,
+      "price": 24.99,
       "dateAdded": "2024/06/28",
       "image": "https://example.com/images/insulin_glargine.jpg"
     },
     {
+      "id": 17,
       "medicineName": "Amoxicillin",
       "brandName": "AntibioticPlus",
       "categoryName": "Antibiotics",
-      "price": 18.00,
+      "price": 18.99,
       "dateAdded": "2024/06/22",
       "image": "https://example.com/images/amoxicillin.jpg"
     },
     {
+      "id": 18,
       "medicineName": "Ciprofloxacin",
       "brandName": "AntibioticPlus",
       "categoryName": "Antibiotics",
-      "price": 20.50,
+      "price": 20.99,
       "dateAdded": "2024/06/25",
       "image": "https://example.com/images/ciprofloxacin.jpg"
     },
     {
+      "id": 19,
       "medicineName": "Azithromycin",
       "brandName": "AntibioticPlus",
       "categoryName": "Antibiotics",
-      "price": 21.50,
+      "price": 21.99,
       "dateAdded": "2024/06/27",
       "image": "https://example.com/images/azithromycin.jpg"
     },
     {
+      "id": 20,
       "medicineName": "Doxycycline",
       "brandName": "AntibioticPlus",
       "categoryName": "Antibiotics",
-      "price": 22.50,
+      "price": 22.99,
       "dateAdded": "2024/06/30",
       "image": "https://example.com/images/doxycycline.jpg"
     },
     {
+      "id": 21,
       "medicineName": "Losartan",
       "brandName": "HeartGuard",
       "categoryName": "Heart Health",
-      "price": 19.50,
+      "price": 19.99,
       "dateAdded": "2024/07/01",
       "image": "https://example.com/images/losartan.jpg"
     },
     {
+      "id": 22,
       "medicineName": "Amlodipine",
       "brandName": "HeartGuard",
       "categoryName": "Heart Health",
-      "price": 17.00,
+      "price": 17.99,
       "dateAdded": "2024/07/03",
       "image": "https://example.com/images/amlodipine.jpg"
     },
     {
+      "id": 23,
       "medicineName": "Atorvastatin",
       "brandName": "HeartGuard",
       "categoryName": "Heart Health",
-      "price": 23.00,
+      "price": 23.99,
       "dateAdded": "2024/07/05",
       "image": "https://example.com/images/atorvastatin.jpg"
     },
     {
+      "id": 24,
       "medicineName": "Lisinopril",
       "brandName": "HeartGuard",
       "categoryName": "Heart Health",
-      "price": 16.50,
+      "price": 16.99,
       "dateAdded": "2024/07/07",
       "image": "https://example.com/images/lisinopril.jpg"
     },
     {
+      "id": 25,
       "medicineName": "Vitamin D3",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 7.50,
+      "price": 7.99,
       "dateAdded": "2024/06/24",
       "image": "https://example.com/images/vitamin_d3.jpg"
     },
     {
+      "id": 26,
       "medicineName": "Fish Oil",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 8.85,
+      "price": 9.99,
       "dateAdded": "2024/06/26",
       "image": "https://example.com/images/fish_oil.jpg"
     },
     {
-      "medicineName": "Probiotics",
-      "brandName": "NutriBoost",
-      "categoryName": "Supplements",
-      "price": 9.75,
-      "dateAdded": "2024/06/29",
-      "image": "https://example.com/images/probiotics.jpg"
-    },
-    {
+      "id": 27,
       "medicineName": "Calcium",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 6.25,
-      "dateAdded": "2024/07/01",
+      "price": 8.99,
+      "dateAdded": "2024/06/28",
       "image": "https://example.com/images/calcium.jpg"
     },
     {
+      "id": 28,
+      "medicineName": "Iron",
+      "brandName": "NutriBoost",
+      "categoryName": "Supplements",
+      "price": 10.49,
+      "dateAdded": "2024/07/01",
+      "image": "https://example.com/images/iron.jpg"
+    },
+    {
+      "id": 29,
       "medicineName": "Penicillin",
       "brandName": "AntibioticPlus",
       "categoryName": "Antibiotics",
-      "price": 18.75,
+      "price": 18.99,
       "dateAdded": "2024/06/24",
       "image": "https://example.com/images/penicillin.jpg"
     },
     {
+      "id": 30,
       "medicineName": "Multivitamins",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 11.25,
+      "price": 11.99,
       "dateAdded": "2024/06/25",
       "image": "https://example.com/images/multivitamins.jpg"
     },
     {
+      "id": 31,
       "medicineName": "Zinc",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 10.75,
+      "price": 10.99,
       "dateAdded": "2024/07/05",
       "image": "https://example.com/images/zinc.jpg"
     },
     {
+      "id": 32,
       "medicineName": "Biotin",
       "brandName": "NutriBoost",
       "categoryName": "Supplements",
-      "price": 13.50,
+      "price": 13.99,
       "dateAdded": "2024/07/07",
       "image": "https://example.com/images/biotin.jpg"
+    },
+    {
+      "id": 33,
+      "medicineName": "Folic Acid",
+      "brandName": "NutriBoost",
+      "categoryName": "Supplements",
+      "price": 12.49,
+      "dateAdded": "2024/07/09",
+      "image": "https://example.com/images/folic_acid.jpg"
+    },
+    {
+      "id": 34,
+      "medicineName": "Ginger Root",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 7.49,
+      "dateAdded": "2024/06/22",
+      "image": "https://example.com/images/ginger_root.jpg"
+    },
+    {
+      "id": 35,
+      "medicineName": "Echinacea",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 9.49,
+      "dateAdded": "2024/06/25",
+      "image": "https://example.com/images/echinacea.jpg"
+    },
+    {
+      "id": 36,
+      "medicineName": "Ginseng",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 10.99,
+      "dateAdded": "2024/06/27",
+      "image": "https://example.com/images/ginseng.jpg"
+    },
+    {
+      "id": 37,
+      "medicineName": "Turmeric",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 8.99,
+      "dateAdded": "2024/06/30",
+      "image": "https://example.com/images/turmeric.jpg"
+    },
+    {
+      "id": 38,
+      "medicineName": "Ashwagandha",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 11.49,
+      "dateAdded": "2024/07/03",
+      "image": "https://example.com/images/ashwagandha.jpg"
+    },
+    {
+      "id": 39,
+      "medicineName": "Milk Thistle",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 9.99,
+      "dateAdded": "2024/07/05",
+      "image": "https://example.com/images/milk_thistle.jpg"
+    },
+    {
+      "id": 40,
+      "medicineName": "St. John's Wort",
+      "brandName": "HerbHealth",
+      "categoryName": "Herbal Remedies",
+      "price": 12.99,
+      "dateAdded": "2024/07/07",
+      "image": "https://example.com/images/st_johns_wort.jpg"
     }
   ]
   

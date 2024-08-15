@@ -1,3 +1,4 @@
+import SliderText from "../../Components/SliderText";
 
 const Banner = () => {
     return (
@@ -7,60 +8,28 @@ const Banner = () => {
                     <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/bNp31MfQ/1.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
-                            <div className="hero-content text-neutral-content text-center">
-                                <div className="w-full md:w-4/5">
-                                    <h1 className="mb-2 md:mb-5 text-xl md:text-5xl font-bold pt-4 md:pt-8">Welcome to <br /> Prime Picks Limited!</h1>
-                                    <p className="mb-3 md:mb-5 w-5/6 md:w-3/4 mx-auto text-sm md:text-base">
-                                    Discover the best in health with our trusted collection of quality medicines. From Over-the-Counter essentials to herbal remedies, we provide reliable options for all your healthcare needs.
-                                    </p>
-                                    <button className="btn btn-basic">Get Started</button>
-                                </div>
-                            </div>
+                            <SliderText heading1={'Welcome to'} heading2={'Prime Picks Limited!'} description={'Discover the best in health with our trusted collection of quality medicines. From Over-the-Counter essentials to herbal remedies, we provide reliable options for all your healthcare needs.'} ></SliderText>
                     </div>
                 </div>
                 <div id="item2" className="carousel-item w-full">
                     <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/ZqBcTz6h/4.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
-                            <div className="hero-content text-neutral-content text-center">
-                                <div className="w-full md:w-4/5">
-                                    <h1 className="mb-2 md:mb-5 text-xl md:text-5xl font-bold pt-4 md:pt-8">Trusted Source for <br />  Quality Medicines and Expert Care</h1>
-                                    <p className="mb-3 md:mb-5 w-5/6 md:w-3/4 mx-auto text-sm md:text-base">
-                                    Your well-being is our priority, offering expert guidance and top-tier products to ensure you get the care you deserve. Explore our wide range of medicines and experience the convenience of finding exactly what you need, all in one place. Your health, our commitment.
-                                    </p>
-                                    <button className="btn btn-basic">Get Started</button>
-                                </div>
-                            </div>
+                            <SliderText heading1={'Trusted Source for'} heading2={'Quality Medicines and Expert Care'} description={'Your well-being is our priority, offering expert guidance and top-tier products to ensure you get the care you deserve. Explore our wide range of medicines and experience the convenience of finding exactly what you need, all in one place. Your health, our commitment.'} ></SliderText>
                     </div>
                 </div>
                 <div id="item3" className="carousel-item w-full">
                     <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/0jxdd6F8/2.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
-                            <div className="hero-content text-neutral-content text-center">
-                                <div className="w-full md:w-4/5">
-                                    <h1 className="mb-2 md:mb-5 text-xl md:text-5xl font-bold pt-4 md:pt-8">Your Health, Our Priority</h1>
-                                    <p className="mb-3 md:mb-5 w-5/6 md:w-3/4 mx-auto text-sm md:text-base">
-                                    Explore a wide range of trusted medicines, from prescription drugs to herbal remedies, all at your fingertips. Quality care, affordable prices, and fast delivery – we’re here to support your wellness journey every step of the way.
-                                    </p>
-                                    <button className="btn btn-basic">Get Started</button>
-                                </div>
-                            </div>
+                            <SliderText heading1={'Your Health, Our Priority '} description={'Explore a wide range of trusted medicines, from prescription drugs to herbal remedies, all at your fingertips. Quality care, affordable prices, and fast delivery – we’re here to support your wellness journey every step of the way.'} ></SliderText>
                     </div>
                 </div>
                 <div id="item4" className="carousel-item w-full">
                     <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/xTf3XzL5/5.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
-                            <div className="hero-content text-neutral-content text-center">
-                                <div className="w-full md:w-4/5">
-                                    <h1 className="mb-2 md:mb-5 text-xl md:text-5xl font-bold pt-4 md:pt-8">Affordable, reliable medicines <br /> delivered to your door</h1>
-                                    <p className="mb-3 md:mb-5 w-5/6 md:w-3/4 mx-auto text-sm md:text-base">
-                                    Find the medicines you need, when you need them. Whether it is over-the-counter essentials or specialized treatments, we have got you covered with top-quality products. Reliable, convenient, and always focused on your well-being.
-                                    </p>
-                                    <button className="btn btn-basic">Get Started</button>
-                                </div>
-                            </div>
+                            <SliderText heading1={'Affordable, reliable medicines'} heading2={'delivered to your door'} description={'Find the medicines you need, when you need them. Whether it is over-the-counter essentials or specialized treatments, we have got you covered with top-quality products. Reliable, convenient, and always focused on your well-being.'} ></SliderText>
                     </div>
                 </div>
             </div>

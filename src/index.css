@@ -38,3 +38,9 @@ background-image: url(../src/assets/banner/1.PNG);
   border-radius: 20%;
   color: aliceblue;
 }
+.btn-filter{
+  background-color: rgb(4, 99, 99);
+  border-bottom: 1px white;
+  border-radius: 4px;
+  color: aliceblue;
+}

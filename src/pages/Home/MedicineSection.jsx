@@ -83,14 +83,14 @@ const MedicineSection = () => {
                         <details className="dropdown">
                             <summary className="btn btn-filter w-28 md:w-full">Filter By Brand <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                                <li><Link onClick={()=>handleFilterByBrand('AllergyGuard')}>AllergyGuard</Link></li>
+                                <li><Link onClick={()=>handleFilterByBrand('AntibioticPlus')}>AntibioticPlus</Link></li>
+                                <li><Link onClick={()=>handleFilterByBrand('DigestWell')}>DigestWell</Link></li>
+                                <li><Link onClick={()=>handleFilterByBrand('GlucoCare')}>GlucoCare</Link></li>
+                                <li><Link onClick={()=>handleFilterByBrand('HealthCare')}>HealthCare</Link></li>
+                                <li><Link onClick={()=>handleFilterByBrand('HeartGuard')}>HeartGuard</Link></li>
                                 <li><Link onClick={()=>handleFilterByBrand('HerbHealth')}>HerbHealth</Link></li>
                                 <li><Link onClick={()=>handleFilterByBrand('NutriBoost')}>NutriBoost</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('AntibioticPlus')}>AntibioticPlus</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('HeartGuard')}>HeartGuard</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('GlucoCare')}>GlucoCare</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('DigestWell')}>DigestWell</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('AllergyGuard')}>DigestWell</Link></li>
-                                <li><Link onClick={()=>handleFilterByBrand('HealthCare')}>HealthCare</Link></li>
                             </ul>
                         </details>
                 </div>   
@@ -99,8 +99,14 @@ const MedicineSection = () => {
                         <details className="dropdown">
                             <summary className="btn btn-filter w-28 md:w-full">Filter By Category <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                                <li><Link onClick={()=>handleFilterByCategory('Returnable')}>Returnable</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Non-Returnable')}>Non-Returnable</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Allergy Relief')}>Allergy Relief</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Antibiotics')}>Antibiotics</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Diabetes Care')}>Diabetes Care</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Digestive Health')}>Digestive Health</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Heart Health')}>Heart Health</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Herbal Remedies')}>Herbal Remedies</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Pain Reliever')}>Pain Reliever</Link></li>
+                                <li><Link onClick={()=>handleFilterByCategory('Supplements')}>Supplements</Link></li>
                             </ul>
                         </details>
                 </div>   

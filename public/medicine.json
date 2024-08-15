@@ -330,7 +330,7 @@
       "categoryName": "Herbal Remedies",
       "price": 8.99,
       "dateAdded": "2024/06/30",
-      "image": "https://example.com/images/turmeric.jpg"
+      "image": "https://i.postimg.cc/9MVQ3s4m/turmeric.jpg"
     },
     {
       "id": 38,
@@ -339,7 +339,7 @@
       "categoryName": "Herbal Remedies",
       "price": 11.49,
       "dateAdded": "2024/07/03",
-      "image": "https://example.com/images/ashwagandha.jpg"
+      "image": "https://i.postimg.cc/1XXPsSyQ/ashwagandha.png"
     },
     {
       "id": 39,
@@ -348,7 +348,7 @@
       "categoryName": "Herbal Remedies",
       "price": 9.99,
       "dateAdded": "2024/07/05",
-      "image": "https://example.com/images/milk_thistle.jpg"
+      "image": "https://i.postimg.cc/pTXMJvhF/milkthistle.png"
     },
     {
       "id": 40,
@@ -357,7 +357,7 @@
       "categoryName": "Herbal Remedies",
       "price": 12.99,
       "dateAdded": "2024/07/07",
-      "image": "https://example.com/images/st_johns_wort.jpg"
+      "image": "https://i.postimg.cc/13BQn44Q/st-johns-wort.jpg"
     }
   ]
   

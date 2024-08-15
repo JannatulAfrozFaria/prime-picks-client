@@ -231,7 +231,7 @@
       "categoryName": "Supplements",
       "price": 9.99,
       "dateAdded": "2024/06/26",
-      "image": "https://example.com/images/fish_oil.jpg"
+      "image": "https://i.postimg.cc/Ls6d19Fc/fish-oil.jpg"
     },
     {
       "id": 27,
@@ -240,7 +240,7 @@
       "categoryName": "Supplements",
       "price": 8.99,
       "dateAdded": "2024/06/28",
-      "image": "https://example.com/images/calcium.jpg"
+      "image": "https://i.postimg.cc/gJ8KchBm/calcium.png"
     },
     {
       "id": 28,
@@ -249,7 +249,7 @@
       "categoryName": "Supplements",
       "price": 10.49,
       "dateAdded": "2024/07/01",
-      "image": "https://example.com/images/iron.jpg"
+      "image": "https://i.postimg.cc/fbcnmLx4/iron.png"
     },
     {
       "id": 29,
@@ -258,7 +258,7 @@
       "categoryName": "Antibiotics",
       "price": 18.99,
       "dateAdded": "2024/06/24",
-      "image": "https://example.com/images/penicillin.jpg"
+      "image": "https://i.postimg.cc/13FL1t7g/penicillin.png"
     },
     {
       "id": 30,
@@ -267,7 +267,7 @@
       "categoryName": "Supplements",
       "price": 11.99,
       "dateAdded": "2024/06/25",
-      "image": "https://example.com/images/multivitamins.jpg"
+      "image": "https://i.postimg.cc/HnjhZs7k/multivitamins.png"
     },
     {
       "id": 31,
@@ -276,7 +276,7 @@
       "categoryName": "Supplements",
       "price": 10.99,
       "dateAdded": "2024/07/05",
-      "image": "https://example.com/images/zinc.jpg"
+      "image": "https://i.postimg.cc/sXg6xDm4/zinc1.webp"
     },
     {
       "id": 32,
@@ -285,7 +285,7 @@
       "categoryName": "Supplements",
       "price": 13.99,
       "dateAdded": "2024/07/07",
-      "image": "https://example.com/images/biotin.jpg"
+      "image": "https://i.postimg.cc/nz5hwrwd/biotin.png"
     },
     {
       "id": 33,
@@ -294,7 +294,7 @@
       "categoryName": "Supplements",
       "price": 12.49,
       "dateAdded": "2024/07/09",
-      "image": "https://example.com/images/folic_acid.jpg"
+      "image": "https://i.postimg.cc/85kkt3Bz/folic-acid.png"
     },
     {
       "id": 34,
@@ -303,7 +303,7 @@
       "categoryName": "Herbal Remedies",
       "price": 7.49,
       "dateAdded": "2024/06/22",
-      "image": "https://example.com/images/ginger_root.jpg"
+      "image": "https://i.postimg.cc/Xqpj0CPM/ginger-root.png"
     },
     {
       "id": 35,
@@ -312,7 +312,7 @@
       "categoryName": "Herbal Remedies",
       "price": 9.49,
       "dateAdded": "2024/06/25",
-      "image": "https://example.com/images/echinacea.jpg"
+      "image": "https://i.postimg.cc/P5GtBNzc/echinacea.png"
     },
     {
       "id": 36,
@@ -321,7 +321,7 @@
       "categoryName": "Herbal Remedies",
       "price": 10.99,
       "dateAdded": "2024/06/27",
-      "image": "https://example.com/images/ginseng.jpg"
+      "image": "https://i.postimg.cc/MTGxyBqc/ginseng.png"
     },
     {
       "id": 37,

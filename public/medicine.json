@@ -11,7 +11,7 @@
     {
       "id": 2,
       "medicineName": "Ibuprofen",
-      "brandName": "HealthCare",
+      "brandName": "BioPharma",
       "categoryName": "Pain Reliever",
       "price": 6.99,
       "dateAdded": "2024/07/03",
@@ -29,7 +29,7 @@
     {
       "id": 4,
       "medicineName": "Naproxen",
-      "brandName": "HealthCare",
+      "brandName": "BioPharma",
       "categoryName": "Pain Reliever",
       "price": 7.49,
       "dateAdded": "2024/07/07",
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "medicineName": "Cetirizine",
-      "brandName": "AllergyGuard",
+      "brandName": "Square",
       "categoryName": "Allergy Relief",
       "price": 8.99,
       "dateAdded": "2024/06/30",
@@ -47,7 +47,7 @@
     {
       "id": 6,
       "medicineName": "Loratadine",
-      "brandName": "AllergyGuard",
+      "brandName": "BioPharma",
       "categoryName": "Allergy Relief",
       "price": 9.49,
       "dateAdded": "2024/07/02",
@@ -56,7 +56,7 @@
     {
       "id": 7,
       "medicineName": "Fexofenadine",
-      "brandName": "AllergyGuard",
+      "brandName": "Square",
       "categoryName": "Allergy Relief",
       "price": 10.99,
       "dateAdded": "2024/07/04",
@@ -65,7 +65,7 @@
     {
       "id": 8,
       "medicineName": "Levocetirizine",
-      "brandName": "AllergyGuard",
+      "brandName": "BioPharma",
       "categoryName": "Allergy Relief",
       "price": 11.99,
       "dateAdded": "2024/07/06",
@@ -74,7 +74,7 @@
     {
       "id": 9,
       "medicineName": "Omeprazole",
-      "brandName": "DigestWell",
+      "brandName": "Square",
       "categoryName": "Digestive Health",
       "price": 12.49,
       "dateAdded": "2024/06/25",
@@ -83,7 +83,7 @@
     {
       "id": 10,
       "medicineName": "Pantoprazole",
-      "brandName": "DigestWell",
+      "brandName": "HealthCare",
       "categoryName": "Digestive Health",
       "price": 13.99,
       "dateAdded": "2024/06/28",
@@ -92,7 +92,7 @@
     {
       "id": 11,
       "medicineName": "Ranitidine",
-      "brandName": "DigestWell",
+      "brandName": "Square",
       "categoryName": "Digestive Health",
       "price": 9.99,
       "dateAdded": "2024/06/30",
@@ -101,7 +101,7 @@
     {
       "id": 12,
       "medicineName": "Esomeprazole",
-      "brandName": "DigestWell",
+      "brandName": "HealthCare",
       "categoryName": "Digestive Health",
       "price": 14.99,
       "dateAdded": "2024/07/03",
@@ -137,7 +137,7 @@
     {
       "id": 16,
       "medicineName": "Insulin Glargine",
-      "brandName": "GlucoCare",
+      "brandName": "BioPharma",
       "categoryName": "Diabetes Care",
       "price": 24.99,
       "dateAdded": "2024/06/28",
@@ -155,7 +155,7 @@
     {
       "id": 18,
       "medicineName": "Ciprofloxacin",
-      "brandName": "AntibioticPlus",
+      "brandName": "Square",
       "categoryName": "Antibiotics",
       "price": 20.99,
       "dateAdded": "2024/06/25",
@@ -182,7 +182,7 @@
     {
       "id": 21,
       "medicineName": "Losartan",
-      "brandName": "HeartGuard",
+      "brandName": "HealthCare",
       "categoryName": "Heart Health",
       "price": 19.99,
       "dateAdded": "2024/07/01",
@@ -191,7 +191,7 @@
     {
       "id": 22,
       "medicineName": "Amlodipine",
-      "brandName": "HeartGuard",
+      "brandName": "HealthCare",
       "categoryName": "Heart Health",
       "price": 17.99,
       "dateAdded": "2024/07/03",
@@ -200,7 +200,7 @@
     {
       "id": 23,
       "medicineName": "Atorvastatin",
-      "brandName": "HeartGuard",
+      "brandName": "HealthCare",
       "categoryName": "Heart Health",
       "price": 23.99,
       "dateAdded": "2024/07/05",
@@ -209,7 +209,7 @@
     {
       "id": 24,
       "medicineName": "Lisinopril",
-      "brandName": "HeartGuard",
+      "brandName": "Square",
       "categoryName": "Heart Health",
       "price": 16.99,
       "dateAdded": "2024/07/07",
@@ -218,7 +218,7 @@
     {
       "id": 25,
       "medicineName": "Vitamin D3",
-      "brandName": "NutriBoost",
+      "brandName": "HealthCare",
       "categoryName": "Supplements",
       "price": 7.99,
       "dateAdded": "2024/06/24",
@@ -245,7 +245,7 @@
     {
       "id": 28,
       "medicineName": "Iron",
-      "brandName": "NutriBoost",
+      "brandName": "HealthCare",
       "categoryName": "Supplements",
       "price": 10.49,
       "dateAdded": "2024/07/01",
@@ -299,7 +299,7 @@
     {
       "id": 34,
       "medicineName": "Ginger Root",
-      "brandName": "HerbHealth",
+      "brandName": "HealthCare",
       "categoryName": "Herbal Remedies",
       "price": 7.49,
       "dateAdded": "2024/06/22",
@@ -326,7 +326,7 @@
     {
       "id": 37,
       "medicineName": "Turmeric",
-      "brandName": "HerbHealth",
+      "brandName": "HealthCare",
       "categoryName": "Herbal Remedies",
       "price": 8.99,
       "dateAdded": "2024/06/30",

@@ -29,16 +29,16 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow base">
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow base font-bold">
                         {NavOptions}
                     </ul>
                     </div>
                     <img className="w-16"
                      src="https://i.postimg.cc/XJ8qypbS/prime1.png" alt="prime picks logo" />
-                    <a className="btn btn-ghost text-xl md:text-2xl edu base">Prime Picks</a>
+                    <a className="btn btn-ghost text-xl md:text-2xl edu light-text font-bold">Prime Picks</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 light-text">
+                    <ul className="menu menu-horizontal px-1 light-text font-bold">
                         {NavOptions}
                     </ul>
                 </div>

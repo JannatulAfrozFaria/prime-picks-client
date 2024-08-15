@@ -114,7 +114,7 @@
       "categoryName": "Diabetes Care",
       "price": 15.99,
       "dateAdded": "2024/06/20",
-      "image": "https://example.com/images/metformin.jpg"
+      "image": "https://i.postimg.cc/ry3mJWD8/metformin.png"
     },
     {
       "id": 14,
@@ -123,7 +123,7 @@
       "categoryName": "Diabetes Care",
       "price": 16.99,
       "dateAdded": "2024/06/23",
-      "image": "https://example.com/images/glipizide.jpg"
+      "image": "https://i.postimg.cc/zBRBZXMm/Glipizide.png"
     },
     {
       "id": 15,
@@ -132,7 +132,7 @@
       "categoryName": "Diabetes Care",
       "price": 14.99,
       "dateAdded": "2024/06/26",
-      "image": "https://example.com/images/glyburide.jpg"
+      "image": "https://i.postimg.cc/RCX85Q7B/glyburide.png"
     },
     {
       "id": 16,
@@ -141,7 +141,7 @@
       "categoryName": "Diabetes Care",
       "price": 24.99,
       "dateAdded": "2024/06/28",
-      "image": "https://example.com/images/insulin_glargine.jpg"
+      "image": "https://i.postimg.cc/Cx4s8pzP/Insulin-Glargine.png"
     },
     {
       "id": 17,
@@ -150,7 +150,7 @@
       "categoryName": "Antibiotics",
       "price": 18.99,
       "dateAdded": "2024/06/22",
-      "image": "https://example.com/images/amoxicillin.jpg"
+      "image": "https://i.postimg.cc/V62qwYV6/Amoxicillin.png"
     },
     {
       "id": 18,
@@ -159,7 +159,7 @@
       "categoryName": "Antibiotics",
       "price": 20.99,
       "dateAdded": "2024/06/25",
-      "image": "https://example.com/images/ciprofloxacin.jpg"
+      "image": "https://i.postimg.cc/yY4mr8Rp/Ciprofloxacin.png"
     },
     {
       "id": 19,
@@ -168,7 +168,7 @@
       "categoryName": "Antibiotics",
       "price": 21.99,
       "dateAdded": "2024/06/27",
-      "image": "https://example.com/images/azithromycin.jpg"
+      "image": "https://i.postimg.cc/bwL1J0B4/Azithromycin.png"
     },
     {
       "id": 20,
@@ -177,7 +177,7 @@
       "categoryName": "Antibiotics",
       "price": 22.99,
       "dateAdded": "2024/06/30",
-      "image": "https://example.com/images/doxycycline.jpg"
+      "image": "https://i.postimg.cc/BQ48KLH3/Doxycycline.png"
     },
     {
       "id": 21,
@@ -186,7 +186,7 @@
       "categoryName": "Heart Health",
       "price": 19.99,
       "dateAdded": "2024/07/01",
-      "image": "https://example.com/images/losartan.jpg"
+      "image": "https://i.postimg.cc/LXYzCPMj/losartan.png"
     },
     {
       "id": 22,
@@ -195,7 +195,7 @@
       "categoryName": "Heart Health",
       "price": 17.99,
       "dateAdded": "2024/07/03",
-      "image": "https://example.com/images/amlodipine.jpg"
+      "image": "https://i.postimg.cc/SR4J6YQS/amlodipin.webp"
     },
     {
       "id": 23,
@@ -204,7 +204,7 @@
       "categoryName": "Heart Health",
       "price": 23.99,
       "dateAdded": "2024/07/05",
-      "image": "https://example.com/images/atorvastatin.jpg"
+      "image": "https://i.postimg.cc/Cx9MCnJ3/atorvastatin.jpg"
     },
     {
       "id": 24,
@@ -213,7 +213,7 @@
       "categoryName": "Heart Health",
       "price": 16.99,
       "dateAdded": "2024/07/07",
-      "image": "https://example.com/images/lisinopril.jpg"
+      "image": "https://i.postimg.cc/LsMK6tx8/lisinopril.png"
     },
     {
       "id": 25,
@@ -222,7 +222,7 @@
       "categoryName": "Supplements",
       "price": 7.99,
       "dateAdded": "2024/06/24",
-      "image": "https://example.com/images/vitamin_d3.jpg"
+      "image": "https://i.postimg.cc/MGwN8WGc/vitamin-D3.png"
     },
     {
       "id": 26,

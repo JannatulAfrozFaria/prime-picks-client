@@ -26,6 +26,9 @@
 .base{
   color: rgb(34, 145, 145);
 }
+.light-text{
+  color: rgb(113, 189, 189);
+}
 .bg1{
 background-image: url(../src/assets/banner/1.PNG);
 }

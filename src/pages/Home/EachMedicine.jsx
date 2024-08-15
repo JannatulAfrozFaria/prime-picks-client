@@ -3,7 +3,7 @@
 const EachMedicine = ({medicine}) => {
     const {id,image,medicineName,brandName,categoryName,price,dateAdded} = medicine;
     return (
-        <div className="bg-base-100 w-full shadow-xl">
+        <div className="bg-base-100 w-full shadow-lg shadow-cyan-700">
             <div className="grid grid-cols-5">
                 <div className="col-span-2"><img className="h-[180px] w-full" src={image} alt="medicine" /></div>
                 <div className="col-span-3 py-2 px-4">

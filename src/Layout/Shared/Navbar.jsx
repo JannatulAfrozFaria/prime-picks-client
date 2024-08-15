@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const NavOptions = <>
         <li><Link to="/"><a href="">Home</a></Link> </li>
-        <li><Link to="/joinAsEmployee"><a href="">Register</a></Link> </li>
-        <li><Link to="/joinAsManager"><a href="">Login</a></Link> </li>
+        <li><Link to="/register"><a href="">Register</a></Link> </li>
+        <li><Link to="/login"><a href="">Login</a></Link> </li>
         {/* <li><Link to="/dashboard/profile"><a href="">Dashboard</a></Link> </li> */}
     </>
     return (

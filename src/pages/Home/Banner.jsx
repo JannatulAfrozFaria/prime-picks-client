@@ -54,7 +54,7 @@ const Banner = () => {
                                 <div className="w-4/5">
                                     <h1 className="mb-5 text-2xl md:text-5xl font-bold pt-4 md:pt-8">Affordable, reliable medicines <br /> delivered to your door</h1>
                                     <p className="mb-5 w-3/4 mx-auto">
-                                    Find the medicines you need, when you need them. Whether it's over-the-counter essentials or specialized treatments, we've got you covered with top-quality products. Reliable, convenient, and always focused on your well-being.
+                                    Find the medicines you need, when you need them. Whether it is over-the-counter essentials or specialized treatments, we have got you covered with top-quality products. Reliable, convenient, and always focused on your well-being.
                                     </p>
                                     <button className="btn btn-basic">Get Started</button>
                                 </div>

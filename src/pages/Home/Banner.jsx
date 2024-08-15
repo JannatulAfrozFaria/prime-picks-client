@@ -4,7 +4,7 @@ const Banner = () => {
         <div className="mb-4 md:mb-10">
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
-                    <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "https://i.postimg.cc/bNp31MfQ/1.png)",
+                    <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/bNp31MfQ/1.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-neutral-content text-center">
@@ -19,7 +19,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "https://i.postimg.cc/ZqBcTz6h/4.png)",
+                    <div className="hero h-[350px] md:h-[500px]" style={{backgroundImage: "url(https://i.postimg.cc/ZqBcTz6h/4.png)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-neutral-content text-center">

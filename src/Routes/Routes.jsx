@@ -5,6 +5,7 @@ import {
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
 import AddMedicine from "../pages/AddMedicine/AddMedicine";
+import SignUp from "../pages/SignUp/SignUp";
 
   export const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ import AddMedicine from "../pages/AddMedicine/AddMedicine";
         {
             path: '/addMedicine',
             element: <AddMedicine></AddMedicine>
+        },
+        {
+            path: '/SignUp',
+            element: <SignUp></SignUp>
         }
       ]
     },

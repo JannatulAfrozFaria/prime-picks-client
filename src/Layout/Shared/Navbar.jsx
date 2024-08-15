@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const NavOptions = <>
         <li><Link to="/"><a href="">Home</a></Link> </li>
-        <li><Link to="/register"><a href="">Register</a></Link> </li>
         <li><Link to="/addMedicine"><a href="">Add a Medicine</a></Link> </li>
-        {/* <li><Link to="/dashboard/profile"><a href="">Dashboard</a></Link> </li> */}
+        <li><Link to="/SignUp"><a href="">Sign Up</a></Link> </li>
     </>
     return (
         <div className="shadow-lg poppins bg-black bg-opacity-50 fixed z-10 w-full mx-auto">

@@ -1,7 +1,6 @@
-import Button from '../components/Shared/Button/Button'
 import { useNavigate } from 'react-router-dom'
 import Lottie from "lottie-react";
-import error from "../../public/error.json";
+import error from "../../../public/error.json";
 
 const ErrorPage = () => {
   const navigate = useNavigate()
@@ -19,7 +18,7 @@ const ErrorPage = () => {
           <p className='mt-4 text-gray-500 '>For help, You can opt for :</p>
 
           <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
-            <button
+            {/* <button
               onClick={() => navigate(-1)}
               className='flex items-center justify-center w-1/2 px-5 py-1 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto   hover:bg-gray-100 '
             >
@@ -39,14 +38,13 @@ const ErrorPage = () => {
               </svg>
 
               <span>Previous Page</span>
-            </button>
-
-            <Button label={'Go to Home'} onClick={() => navigate('/')} />
+            </button> */}
+            <button className='btn btn-basic' onClick={() => navigate('/')}>Go to Home</button>
           </div>
         </div>
       </div>
     </section>
   )
-}
+};
 
-export default ErrorPage
+export default ErrorPage;

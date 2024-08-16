@@ -61,6 +61,22 @@ const MedicineSection = () => {
         })
         setSearchResults(filteredMedicines);
     }
+    // const filterByPrice = (min, max) => {
+    //     const filtered = products.filter(product => product.price >= min && product.price <= max);
+    //     setFilteredProducts(filtered);
+    //   };
+    const handleFilterByPriceRange= (min,max) =>{
+        const filteredMedicines = searchResults.filter(item=> {
+            if(item.price >= min && item.price <= max){
+                console.log(item);
+                return item;
+            }
+            // else if(!category){
+            //     return item;
+            // }
+        })
+        setSearchResults(filteredMedicines);
+    }
     return (
         <div className="mb-8">
             <Title heading={'Health Essentials'} subHeading={'Here comes our wide range of collection'}></Title>
@@ -114,14 +130,8 @@ const MedicineSection = () => {
                         <details className="dropdown">
                             <summary className="btn btn-filter w-28 md:w-full">Filter By Price <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                                <li><Link onClick={()=>handleFilterByCategory('Allergy Relief')}>Allergy Relief</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Antibiotics')}>Antibiotics</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Diabetes Care')}>Diabetes Care</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Digestive Health')}>Digestive Health</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Heart Health')}>Heart Health</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Herbal Remedies')}>Herbal Remedies</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Pain Reliever')}>Pain Reliever</Link></li>
-                                <li><Link onClick={()=>handleFilterByCategory('Supplements')}>Supplements</Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(0,5)}>(0-5)$</Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(5,10)}>(5-10)$</Link></li>
                             </ul>
                         </details>
                 </div>   

@@ -26,7 +26,7 @@ import Login from "../pages/Login/Login";
             element: <SignUp></SignUp>
         },
         {
-            path: 'login',
+            path: '/login',
             element: <Login></Login>
         }
       ]

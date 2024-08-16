@@ -6,6 +6,7 @@ const Navbar = () => {
         <li><Link to="/"><a href="">Home</a></Link> </li>
         <li><Link to="/addMedicine"><a href="">Add a Medicine</a></Link> </li>
         <li><Link to="/SignUp"><a href="">Sign Up</a></Link> </li>
+        <li><Link to="/login"><a href="">Login</a></Link> </li>
     </>
     return (
         <div className="shadow-lg poppins bg-black bg-opacity-50 fixed z-10 w-full mx-auto">

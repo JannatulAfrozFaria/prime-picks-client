@@ -12,8 +12,9 @@ const MedicineSection = () => {
     //     .then(res=>res.json())
     //     .then(data=>setMedicines(data))
     // } ,[medicines])
+   
+    const [medicines,loading,page,setPage] = useMedicine();
 
-    const [medicines,loading] = useMedicine();
      // STATE FOR-----SEARCH-----
      const [searchTerm, setSearchTerm] = useState('');
      const [searchResults, setSearchResults] = useState(medicines);
@@ -23,6 +24,27 @@ const MedicineSection = () => {
             setSearchResults(medicines);
         }
     },[loading])
+
+    //------PAGINATION
+    // const [pageCount, setPageCount] = useState(0);
+    // useEffect(()=>{
+    //     if(searchResults){
+    //         setPageCount(searchResults.pagination.pageCount)
+    //     }
+    // },[searchResults])
+    //FUNCTION----FOR-----PAGINATION
+    // const handlePrevious = () =>{
+    //     setPage((p)=>{
+    //         if(p === 1) return p;
+    //         return p -1 ;
+    //     })
+    //     }
+    // const handleNext = () =>{
+    //         setPage((p)=>{
+    //             if(p ===pageCount) return p;
+    //             return p + 1;
+    //         })
+    //     }
  
      // FUNCTION FOR-----SEARCH-----
      const handleSearch = () =>{
@@ -165,6 +187,17 @@ const MedicineSection = () => {
             {/* Map Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {searchResults.map(medicine=> <EachMedicine key={medicine._id} medicine={medicine} ></EachMedicine> )}
+            </div>
+            <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
+                {/* <p className="mb-2">Page : <span className="text-yellow-500 poppins">{page} </span> , Page Count : <span className="text-yellow-500 poppins">{pageCount}</span></p> */}
+                {/* <button disabled={page===1} onClick={handlePrevious} className="btn btn-filter w-full md:w-24">Previous</button>
+                <button disabled={page===pageCount} onClick={handleNext} className="btn btn-filter w-full md:w-28">Next</button> */}
+                 <button className="btn btn-filter w-full md:w-16">Previous</button>
+                 <button className="btn btn-round">1</button>
+                 <button className="btn btn-round">2</button>
+                 <button className="btn btn-round">3</button>
+                 <button className="btn btn-round">4</button>
+                <button className="btn btn-filter w-full md:w-16">Next</button>
             </div>
         </div>
     );

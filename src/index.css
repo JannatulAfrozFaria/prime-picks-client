@@ -44,3 +44,8 @@ background-image: url(../src/assets/banner/1.PNG);
   border-radius: 4px;
   color: aliceblue;
 }
+.btn-round{
+  background-color: rgb(4, 99, 99);
+  border-radius: 100%;
+  color: aliceblue;
+}

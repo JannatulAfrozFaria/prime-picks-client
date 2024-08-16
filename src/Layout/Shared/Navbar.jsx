@@ -41,10 +41,6 @@ const Navbar = () => {
                         {NavOptions}
                     </ul>
                 </div>
-                {/* <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div> */}
-                
                 {/* Profile Starts*/}
                 <div className="navbar-end">
                     <div className="dropdown dropdown-end">

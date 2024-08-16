@@ -61,10 +61,6 @@ const MedicineSection = () => {
         })
         setSearchResults(filteredMedicines);
     }
-    // const filterByPrice = (min, max) => {
-    //     const filtered = products.filter(product => product.price >= min && product.price <= max);
-    //     setFilteredProducts(filtered);
-    //   };
     const handleFilterByPriceRange= (min,max) =>{
         const filteredMedicines = searchResults.filter(item=> {
             if(item.price >= min && item.price <= max){
@@ -77,21 +73,38 @@ const MedicineSection = () => {
         })
         setSearchResults(filteredMedicines);
     }
+    //FUNCTION FOR----SORT
+    const sortByLowToHigh = () =>{
+        const sortByLowToHighPrice = [searchResults.sort((a,b)=>{
+            return parseInt(b.price) - parseInt(a.price)
+        })]
+        setSearchResults(sortByLowToHighPrice);
+    }
+    const sortByHIghToLow = () =>{
+        const sortByHighToLowPrice = [searchResults.sort((a,b)=>{
+            return parseInt(a.price) - parseInt(b.price)
+        })]
+        setSearchResults(sortByHighToLowPrice);
+    }
+    const sortByDateAdded = () =>{
+        const sortByLowToHighPrice = [searchResults.sort((a,b)=>{
+            return parseInt(a.price.slice(1)) - parseInt(b.price.slice(1))
+        })]
+        setSearchResults(sortByLowToHighPrice);
+    }
     return (
         <div className="mb-8">
             <Title heading={'Health Essentials'} subHeading={'Here comes our wide range of collection'}></Title>
             {/* Search,Filter Section */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-1 my-4">
+            <div className="grid grid-cols-3 md:grid-cols-5 mt-4 mb-8 w-3/4 mx-auto items-center">
                 {/* SEARCH----OPTION */}
                 <div className="join">
-                    <div className=''>
-                        <div>
-                            <input type="text" value={searchTerm}
-                            onChange={handleChange} className="input input-bordered join-item" placeholder="Search"/>
-                        </div>
+                    <div>
+                        <input type="text" value={searchTerm}
+                        onChange={handleChange} className="input input-bordered join-item w-24" placeholder="Search"/>
                     </div>
                     <div className="indicator">
-                        <button onClick={handleSearch} className="btn join-item btn-basic">Search</button>
+                        <button onClick={handleSearch} className="btn join-item btn-filter">Search</button>
                     </div>
                 </div>
                 {/* FILTER---BY---BRAND---OPTION */}
@@ -130,15 +143,28 @@ const MedicineSection = () => {
                         <details className="dropdown">
                             <summary className="btn btn-filter w-28 md:w-full">Filter By Price <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                                <li><Link onClick={()=>handleFilterByPriceRange(0,5)}>(0-5)$</Link></li>
-                                <li><Link onClick={()=>handleFilterByPriceRange(5,10)}>(5-10)$</Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(0,5)}><span className="poppins text-yellow-500">0$ to 5$</span></Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(5,10)}><span className="poppins text-yellow-500">5$ to 10$</span></Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(10,15)}><span className="poppins text-yellow-500">10$ to 15$</span></Link></li>
+                                <li><Link onClick={()=>handleFilterByPriceRange(15,20)}><span className="poppins text-yellow-500">15$ to 20$</span></Link></li>
+                            </ul>
+                        </details>
+                </div>   
+                {/* SORT---OPTION */}
+                <div>
+                        <details className="dropdown">
+                            <summary className="btn btn-filter w-28 md:w-full">Sort<IoIosArrowDown /></summary>
+                            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                                <li><Link onClick={sortByLowToHigh}><span className="poppins text-yellow-500">Low to High Price</span></Link></li>
+                                <li><Link onClick={sortByHIghToLow}><span className="poppins text-yellow-500">High to Low Price</span></Link></li>
+                                <li><Link onClick={sortByDateAdded}><span className="poppins text-yellow-500">Addition Date</span></Link></li>
                             </ul>
                         </details>
                 </div>   
             </div>
             {/* Map Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {searchResults.map(medicine=> <EachMedicine key={medicine.id} medicine={medicine} ></EachMedicine> )}
+                {searchResults.map(medicine=> <EachMedicine key={medicine._id} medicine={medicine} ></EachMedicine> )}
             </div>
         </div>
     );

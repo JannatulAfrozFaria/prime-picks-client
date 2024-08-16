@@ -5,33 +5,34 @@ import LoginIcon2 from "../../Login2.json"
 import Lottie from "lottie-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuth from "../../Hooks/useAuth";
 // import SocialLogin from '../../Components/SocialLogin';
 
 const Login = () => {
-    // const {signIn} = useAuth();
+    const {signIn} = useAuth();
     const navigate = useNavigate();
     const location =  useLocation();
 
-    // const from = location?.state?.from?.pathname || "/"
+    const from = location?.state?.from?.pathname || "/"
     const handleLogin = (event) =>{
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password =  form.password.value;
         console.log(email,password);
-        // signIn(email,password)
-        //     .then(result =>{
-        //         const user = result.user;
-        //         console.log(user);
-        //         Swal.fire({
-        //             position: "top-end",
-        //             icon: "success",
-        //             title: "Logged in successfully!",
-        //             showConfirmButton: false,
-        //             timer: 1500
-        //           });
-        //           navigate(from,{replace: true});
-        //     })
+        signIn(email,password)
+            .then(result =>{
+                const user = result.user;
+                console.log(user);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Logged in successfully!",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+                  navigate(from,{replace: true});
+            })
     }
     return (
         <div className='w-5/6 md:w-full mx-auto pt-24'>
@@ -59,7 +60,7 @@ const Login = () => {
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn btn-base" type="submit" value="Login" />
+                                <input className="btn btn-filter" type="submit" value="Login" />
                             </div>
                             <h2 className="text-gray-500 text-sm mt-1">New Here? <Link className='text-cyan-400 font-semibold' to="/SignUp" > Sign Up!</Link></h2>
                             {/* <SocialLogin></SocialLogin> */}

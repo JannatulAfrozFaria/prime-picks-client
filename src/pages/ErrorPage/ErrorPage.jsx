@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import Lottie from "lottie-react";
-import error from "../../../public/error.json";
+import error from "../../../src/error.json";
 
 const ErrorPage = () => {
   const navigate = useNavigate()

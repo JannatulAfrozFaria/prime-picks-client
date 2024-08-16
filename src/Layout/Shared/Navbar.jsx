@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 
 const Navbar = () => {
+    const {user,logOut} = useAuth();
+    const handleLogOut = () =>{
+        logOut()
+        .then(()=>{})
+        .catch((error)=>console.log(error))
+    }
     const NavOptions = <>
         <li><Link to="/"><a href="">Home</a></Link> </li>
-        <li><Link to="/addMedicine"><a href="">Add a Medicine</a></Link> </li>
-        <li><Link to="/SignUp"><a href="">Sign Up</a></Link> </li>
-        <li><Link to="/login"><a href="">Login</a></Link> </li>
+        {/* <li><Link to="/addMedicine"><a href="">Add a Medicine</a></Link> </li> */}
+        <li><Link to="/blogs"><a href="">Blogs</a></Link> </li>
+        <li><Link to="/SignUp"><a href="">Sign Up </a></Link> </li>
+        
     </>
     return (
         <div className="shadow-lg poppins bg-black bg-opacity-50 fixed z-10 w-full mx-auto">
@@ -47,22 +55,41 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                        <img
-                            alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        {
+                            user? 
+                            <>
+                                <img src={user?.photoURL} alt="" />
+                            </> 
+                            :
+                            <>
+                                <img
+                                alt="Profile Photo"
+                                src="https://i.postimg.cc/nhst6y3S/profile1.png" />
+                            </>
+                        }
                         </div>
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li>
-                        <a className="justify-between">
-                            Profile
-                            <span className="badge">New</span>
-                        </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        className="menu menu-sm dropdown-content bg-cyan-600 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        {/* <li><a>Settings</a></li> */}
+                            {
+                                user ? 
+                                <>
+                                    <li>
+                                        <Link to={'/profile'} >Profile</Link>
+                                    </li>
+                                    <li>
+                                        <Link onClick={handleLogOut} >Log out</Link>
+                                    </li>
+                                </> 
+                                : 
+                                <>
+                                    <li>
+                                        <Link to={'/login'} >Log in</Link>
+                                    </li>
+                                </>
+                            }
                     </ul>
                     </div>
                 </div>

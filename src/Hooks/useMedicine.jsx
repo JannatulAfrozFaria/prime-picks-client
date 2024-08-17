@@ -15,8 +15,8 @@ const useMedicine = () => {
     console.log(page);
     useEffect(()=>{
         setLoading(true);
-        console.log(`http://localhost:5000/medicines?page=${page}&brand=${brandFilter}&category=${categoryFilter}`);
-        fetch(`http://localhost:5000/medicines?page=${page}&brand=${brandFilter}&category=${categoryFilter}${priceMin?`&priceMin=${priceMin}`:''}${priceMax?`&priceMax=${priceMax}`:''}&order=${order}&search=${searchedMedi}`)
+        // console.log(`https://prime-picks-server.vercel.app/medicines?page=${page}&brand=${brandFilter}&category=${categoryFilter}`);
+        fetch(`https://prime-picks-server.vercel.app/medicines?page=${page}&brand=${brandFilter}&category=${categoryFilter}${priceMin?`&priceMin=${priceMin}`:''}${priceMax?`&priceMax=${priceMax}`:''}&order=${order}&search=${searchedMedi}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);

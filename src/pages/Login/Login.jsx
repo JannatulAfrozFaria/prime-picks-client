@@ -6,10 +6,11 @@ import Lottie from "lottie-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
+import { FaGoogle, FaGithub  } from "react-icons/fa";
 // import SocialLogin from '../../Components/SocialLogin';
 
 const Login = () => {
-    const {signIn} = useAuth();
+    const {signIn,signInWithGoogle,signInWithGitHub} = useAuth();
     const navigate = useNavigate();
     const location =  useLocation();
 
@@ -33,6 +34,25 @@ const Login = () => {
                   });
                   navigate(from,{replace: true});
             })
+    }
+    const handleGoogleSignIn =()=>{
+        signInWithGoogle()
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.error(error)
+        })
+    }
+
+    const handleGitHubSignIn = () =>{
+        signInWithGitHub()
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.error(error)
+        })
     }
     return (
         <div className='w-5/6 md:w-full mx-auto pt-24'>
@@ -63,7 +83,18 @@ const Login = () => {
                                 <input className="btn btn-filter" type="submit" value="Login" />
                             </div>
                             <h2 className="text-gray-500 text-sm mt-1">New Here? <Link className='text-cyan-400 font-semibold' to="/SignUp" > Sign Up!</Link></h2>
-                            {/* <SocialLogin></SocialLogin> */}
+                            {/* SOCIAL-----LOG----IN */}
+                            <div className='mt-3 grid grid-cols-2 gap-2 w-full'>
+                                <div className='btn btn-social flex'>
+                                    <div><FaGoogle></FaGoogle></div>
+                                    <div><button onClick={handleGoogleSignIn}  className='text-xs' >  Log in With Google</button></div>
+                                </div>          
+                                <div className='btn btn-social flex'>
+                                    <div><FaGithub></FaGithub></div>
+                                    <div><button onClick={handleGitHubSignIn}   className='text-xs' >Log in With GitHub</button></div>
+                                </div>          
+                                {/* <div className='text-left theme-light'><button onClick={handleGitHubSignIn}  className='btn btn-filter' > <FaGithub></FaGithub> Log in With GitHub</button></div>     */}
+                            </div>    
                         </form>
                     </div>
                     <div>

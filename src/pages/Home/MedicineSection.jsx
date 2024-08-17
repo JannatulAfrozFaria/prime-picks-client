@@ -118,21 +118,23 @@ const MedicineSection = () => {
         <div className="mb-8">
             <Title heading={'Health Essentials'} subHeading={'Here comes our wide range of collection'}></Title>
             {/* Search,Filter Section */}
-            <div className="grid grid-cols-3 md:grid-cols-5 mt-4 mb-8 w-3/4 mx-auto items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 mb-8 w-full md:w-3/4 mx-auto items-center justify-center">
                 {/* SEARCH----OPTION */}
-                <div className="join">
+                <div className="join w-1/3 md:w-full mx-auto">
                     <div>
                         <input type="text" value={searchTerm}
-                        onChange={handleChange} className="input input-bordered join-item w-24" placeholder="Search"/>
+                        onChange={handleChange} className="input input-bordered join-item w-24 md:w-44" placeholder="Search"/>
                     </div>
                     <div className="indicator">
-                        <button onClick={handleSearch} className="btn join-item btn-filter">Search</button>
+                        <button onClick={handleSearch} className="btn join-item btn-filter w-full md:w-36">Search</button>
                     </div>
                 </div>
-                {/* FILTER---BY---BRAND---OPTION */}
-                <div>
+                {/* division---1 */}
+                <div className="grid grid-cols-2 items-center justify-center w-2/3 md:w-full mx-auto">
+                     {/* FILTER---BY---BRAND---OPTION */}
+                    <div>
                         <details className="dropdown">
-                            <summary className="btn btn-filter w-28 md:w-full">Filter By Brand <IoIosArrowDown /></summary>
+                            <summary className="btn btn-filter w-40 md:w-full">Filter By Brand <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                                 <li><Link onClick={()=>handleFilterByBrand('AntibioticPlus')}>AntibioticPlus</Link></li>
                                 <li><Link onClick={()=>handleFilterByBrand('BioPharma')}>BioPharma</Link></li>
@@ -143,11 +145,11 @@ const MedicineSection = () => {
                                 <li><Link onClick={()=>handleFilterByBrand('Square')}>Square</Link></li>
                             </ul>
                         </details>
-                </div>   
-                {/* FILTER---BY---CATEGORY---OPTION */}
-                <div>
+                    </div>   
+                    {/* FILTER---BY---CATEGORY---OPTION */}
+                    <div>
                         <details className="dropdown">
-                            <summary className="btn btn-filter w-28 md:w-full">Filter By Category <IoIosArrowDown /></summary>
+                            <summary className="btn btn-filter w-44 md:w-42">FilterByCategory<IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                                 <li><Link onClick={()=>handleFilterByCategory('Allergy Relief')}>Allergy Relief</Link></li>
                                 <li><Link onClick={()=>handleFilterByCategory('Antibiotics')}>Antibiotics</Link></li>
@@ -159,11 +161,14 @@ const MedicineSection = () => {
                                 <li><Link onClick={()=>handleFilterByCategory('Supplements')}>Supplements</Link></li>
                             </ul>
                         </details>
-                </div>   
-                {/* FILTER---BY---PRICE---RANGE---OPTION */}
-                <div>
+                    </div>  
+                </div> 
+                {/* division----2 */}
+                <div className="grid grid-cols-2 items-center justify-center w-2/3 md:w-full mx-auto">
+                    {/* FILTER---BY---PRICE---RANGE---OPTION */}
+                    <div>
                         <details className="dropdown">
-                            <summary className="btn btn-filter w-28 md:w-full">Filter By Price <IoIosArrowDown /></summary>
+                            <summary className="btn btn-filter w-40 md:w-full">Filter By Price <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                                 <li><Link onClick={()=>handleFilterByPriceRange(0,5)}><span className="poppins text-yellow-500">0$ to 5$</span></Link></li>
                                 <li><Link onClick={()=>handleFilterByPriceRange(5,10)}><span className="poppins text-yellow-500">5$ to 10$</span></Link></li>
@@ -171,33 +176,36 @@ const MedicineSection = () => {
                                 <li><Link onClick={()=>handleFilterByPriceRange(15,20)}><span className="poppins text-yellow-500">15$ to 20$</span></Link></li>
                             </ul>
                         </details>
-                </div>   
-                {/* SORT---OPTION */}
-                <div>
+                    </div>   
+                    {/* SORT---OPTION */}
+                    <div>
                         <details className="dropdown">
-                            <summary className="btn btn-filter w-28 md:w-full">Sort<IoIosArrowDown /></summary>
+                            <summary className="btn btn-filter w-44 md:w-40">Sort<IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                                 <li><Link onClick={sortByLowToHigh}><span className="poppins text-yellow-500">Low to High Price</span></Link></li>
                                 <li><Link onClick={sortByHIghToLow}><span className="poppins text-yellow-500">High to Low Price</span></Link></li>
                                 <li><Link onClick={sortByDateAdded}><span className="poppins text-yellow-500">Addition Date</span></Link></li>
                             </ul>
                         </details>
-                </div>   
+                    </div> 
+                </div>  
             </div>
             {/* Map Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-5/6 md:w-full mx-auto">
                 {searchResults.map(medicine=> <EachMedicine key={medicine._id} medicine={medicine} ></EachMedicine> )}
             </div>
+            {/* <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
+                <p className="mb-2">Page : <span className="text-yellow-500 poppins">{page} </span> , Page Count : <span className="text-yellow-500 poppins">{pageCount}</span></p>
+                <button disabled={page===1} onClick={handlePrevious} className="btn btn-filter w-full md:w-24">Previous</button>
+                <button disabled={page===pageCount} onClick={handleNext} className="btn btn-filter w-full md:w-28">Next</button>
+            </div> */}
             <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
-                {/* <p className="mb-2">Page : <span className="text-yellow-500 poppins">{page} </span> , Page Count : <span className="text-yellow-500 poppins">{pageCount}</span></p> */}
-                {/* <button disabled={page===1} onClick={handlePrevious} className="btn btn-filter w-full md:w-24">Previous</button>
-                <button disabled={page===pageCount} onClick={handleNext} className="btn btn-filter w-full md:w-28">Next</button> */}
-                 <button className="btn btn-filter w-full md:w-16">Previous</button>
+                 <button className="btn btn-filter w-16 md:w-20">Previous</button>
                  <button className="btn btn-round">1</button>
                  <button className="btn btn-round">2</button>
                  <button className="btn btn-round">3</button>
                  <button className="btn btn-round">4</button>
-                <button className="btn btn-filter w-full md:w-16">Next</button>
+                <button className="btn btn-filter w-16 md:w-20">Next</button>
             </div>
         </div>
     );

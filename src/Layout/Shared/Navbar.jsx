@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
+import Tippy from "@tippyjs/react";
 
 
 const Navbar = () => {
@@ -52,9 +53,12 @@ const Navbar = () => {
                 </div>
                 {/* Profile Starts*/}
                 <div className="navbar-end">
+                    <div> <span className="text-cyan-400 poppins pr-0 md:pr-2">{user?.displayName} </span></div>
                     <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        
                         <div className="w-10 rounded-full">
+                       
                         {
                             user? 
                             <>

@@ -33,13 +33,20 @@
 background-image: url(../src/assets/banner/1.PNG);
 }
 .btn-basic{
-  background-color: rgb(4, 99, 99);
+  background-color: rgb(75, 139, 139);
+  /* background-color: rgb(4, 99, 99); */
   border-bottom: 1px white;
   border-radius: 20%;
   color: aliceblue;
 }
 .btn-filter{
   background-color: rgb(4, 99, 99);
+  border-bottom: 1px white;
+  border-radius: 4px;
+  color: aliceblue;
+}
+.btn-social{
+  background-color: rgb(75, 139, 139);
   border-bottom: 1px white;
   border-radius: 4px;
   color: aliceblue;

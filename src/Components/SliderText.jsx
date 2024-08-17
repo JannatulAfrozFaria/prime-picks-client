@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const SliderText = ({heading1, heading2, description}) => {
     return (
@@ -8,7 +9,8 @@ const SliderText = ({heading1, heading2, description}) => {
                     <p className="mb-3 md:mb-5 w-5/6 md:w-3/4 mx-auto text-sm md:text-base">
                     {description}
                     </p>
-                    <button className="btn btn-basic">Get Started</button>
+                    {/* <button  className="btn btn-basic">Get Started</button> */}
+                    <Link to={'/SignUp'} className="btn btn-basic">Get Started</Link>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ import { FaEye,FaEyeSlash} from "react-icons/fa";
 
 const SignUp = () => {
     const {createUser,updateUserProfile} = useAuth();
-    const {register, handleSubmit,reset, formState: { errors }} = useForm();
+    const {register, handleSubmit, reset, formState: { errors }} = useForm();
     const navigate =  useNavigate();
     const [showPassword,setShowPassword] = useState(false);
 
@@ -103,11 +103,9 @@ const SignUp = () => {
                                         }
                                     </span>
                                 </div>
-                                
-
-                                <label className="label">
+                                {/* <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                                </label> */}
                             </div>
                             <div className="form-control mt-6">
                                 <input className="btn btn-filter" type="submit" value="Sign Up" />

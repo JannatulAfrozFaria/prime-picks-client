@@ -29,6 +29,11 @@
 .light-text{
   color: rgb(113, 189, 189);
 }
+.blog-text{
+  color: rgb(113, 189, 189);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
 .bg1{
 background-image: url(../src/assets/banner/1.PNG);
 }

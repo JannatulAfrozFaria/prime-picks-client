@@ -13,7 +13,7 @@ const Navbar = () => {
     const NavOptions = <>
         <li><Link to="/"><a href="">Home</a></Link> </li>
         {/* <li><Link to="/addMedicine"><a href="">Add a Medicine</a></Link> </li> */}
-        <li><Link to="/blogs"><a href="">Blogs</a></Link> </li>
+        <li><Link to="/blogs"><a href="">Queries</a></Link> </li>
         <li><Link to="/SignUp"><a href="">Sign Up </a></Link> </li>
         
     </>

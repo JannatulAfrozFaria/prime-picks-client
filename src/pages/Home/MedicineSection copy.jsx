@@ -13,7 +13,7 @@ const MedicineSection = () => {
     //     .then(data=>setMedicines(data))
     // } ,[medicines])
    
-    const {medicines,loading,page,setPage,setBrandFilter,setCategoryFilter,setPriceMin,setPriceMax,setOrder,setSearchedMedi} = useMedicine();
+    const [medicines,loading,page,setPage,setBrandFilter,setCategoryFilter] = useMedicine();
 
      // STATE FOR-----SEARCH-----
      const [searchTerm, setSearchTerm] = useState('');
@@ -45,11 +45,10 @@ const MedicineSection = () => {
  
      // FUNCTION FOR-----SEARCH-----
      const handleSearch = () =>{
-        // const results = medicines.filter(medicine=>
-        //     medicine.medicineName.toLowerCase().includes(searchTerm.toLowerCase())
-        // );
-        // setSearchResults(results);
-        setSearchedMedi(searchTerm);
+        const results = medicines.filter(medicine=>
+            medicine.medicineName.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setSearchResults(results);
     };
     const handleChange = event =>{
         setSearchTerm(event.target.value);
@@ -66,7 +65,9 @@ const MedicineSection = () => {
         // })
         // setSearchResults(filteredMedicines);
         // console.log(filteredMedicines);
+        console.log(brand);
         setBrandFilter(brand);
+        
     }
     const handleFilterByCategory= (category) =>{
         // const filteredMedicines = searchResults.filter(item=> {
@@ -81,6 +82,7 @@ const MedicineSection = () => {
         //     // return item;
         // })
         // setSearchResults(filteredMedicines);
+        console.log(category);
         setCategoryFilter(category);
     }
     const handleFilterByPriceRange= (min,max) =>{
@@ -94,24 +96,19 @@ const MedicineSection = () => {
         //     // }
         // })
         // setSearchResults(filteredMedicines);
-        setPriceMin(min);
-        setPriceMax(max);
+
+        // setPriceMin(min);
+        // setPriceMax(max);
     }
     //FUNCTION FOR----SORT
-    // const sortByLowToHigh = () =>{
-    //     const sortByLowToHighPrice = [...searchResults].sort((a,b)=>a.price -b.price)
-    //     setSearchResults(sortByLowToHighPrice);
-    // }
     const sortByLowToHigh = () =>{
-        setOrder('asc')
+        const sortByLowToHighPrice = [...searchResults].sort((a,b)=>a.price -b.price)
+        setSearchResults(sortByLowToHighPrice);
     }
     const sortByHIghToLow = () =>{
-        setOrder('dsc')
+        const sortByHighToLowPrice = [...searchResults].sort((a,b)=>b.price -a.price)
+        setSearchResults(sortByHighToLowPrice);
     }
-    // const sortByHIghToLow = () =>{
-    //     const sortByHighToLowPrice = [...searchResults].sort((a,b)=>b.price -a.price)
-    //     setSearchResults(sortByHighToLowPrice);
-    // }
     const sortByDateAdded = () =>{
         const sortByNewestDate = [...searchResults].sort((a,b)=>
             new Date(b.dateAdded) - new Date(a.dateAdded)
@@ -132,8 +129,7 @@ const MedicineSection = () => {
                 <div className="join w-1/3 md:w-full mx-auto">
                     <div>
                         <input type="text" value={searchTerm}
-                        onChange={handleChange} 
-                        className="input input-bordered join-item w-24 md:w-44" placeholder="Search"/>
+                        onChange={handleChange} className="input input-bordered join-item w-24 md:w-44" placeholder="Search"/>
                     </div>
                     <div className="indicator">
                         <button onClick={handleSearch} className="btn join-item btn-filter w-full md:w-36">Search</button>
@@ -176,7 +172,7 @@ const MedicineSection = () => {
                 {/* division----2 */}
                 <div className="grid grid-cols-2 items-center justify-center w-2/3 md:w-full mx-auto">
                     {/* FILTER---BY---PRICE---RANGE---OPTION */}
-                    <div>
+                    {/* <div>
                         <details className="dropdown">
                             <summary className="btn btn-filter w-40 md:w-full">Filter By Price <IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
@@ -187,7 +183,7 @@ const MedicineSection = () => {
                                 <li><Link onClick={()=>handleFilterByPriceRange(20,25)}><span className="poppins text-yellow-500">20$ to 25$</span></Link></li>
                             </ul>
                         </details>
-                    </div>   
+                    </div>    */}
                     {/* SORT---OPTION */}
                     <div>
                         <details className="dropdown">
@@ -205,22 +201,19 @@ const MedicineSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-5/6 md:w-full mx-auto">
                 {searchResults.items.map(medicine=> <EachMedicine key={medicine._id} medicine={medicine} ></EachMedicine> )}
             </div>
-            <div className="w-1/2 mx-auto text-center mt-6">
-                <p className="mb-2">Page : <span className="text-yellow-500 poppins">{page} </span> , Page Count : <span className="text-yellow-500 poppins">{pageCount}</span></p>
-            </div>
             <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
-                
+                <p className="mb-2">Page : <span className="text-yellow-500 poppins">{page} </span> , Page Count : <span className="text-yellow-500 poppins">{pageCount}</span></p>
                 <button disabled={page===1} onClick={handlePrevious} className="btn btn-filter w-full md:w-24">Previous</button>
                 <button disabled={page===pageCount} onClick={handleNext} className="btn btn-filter w-full md:w-28">Next</button>
             </div>
-            {/* <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
+            <div className="w-5/6 mx-auto text-center mt-6 flex justify-center gap-1">
                  <button className="btn btn-filter w-16 md:w-20">Previous</button>
                  <button className="btn btn-round">1</button>
                  <button className="btn btn-round">2</button>
                  <button className="btn btn-round">3</button>
                  <button className="btn btn-round">4</button>
                 <button className="btn btn-filter w-16 md:w-20">Next</button>
-            </div> */}
+            </div>
         </div>
     );
 };

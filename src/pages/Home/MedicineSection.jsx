@@ -129,7 +129,7 @@ const MedicineSection = () => {
             {/* Search,Filter Section */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-1 mt-4 mb-8 w-full md:w-3/4 mx-auto items-center justify-center">
                 {/* SEARCH----OPTION */}
-                <div className="join w-1/3 md:w-full mx-auto col-span-1">
+                {/* <div className="join w-1/3 md:w-full mx-auto col-span-1">
                     <div className="w-full">
                         <input type="text" value={searchTerm}
                         onChange={handleChange} 
@@ -138,7 +138,7 @@ const MedicineSection = () => {
                     <div className="indicator w-full">
                         <button onClick={handleSearch} className="btn join-item btn-filter w-full">Search</button>
                     </div>
-                </div>
+                </div> */}
                 {/* division---1 */}
                 <div className="grid grid-cols-2 gap-1 items-center justify-center w-2/3 md:w-full mx-auto col-span-2">
                      {/* FILTER---BY---BRAND---OPTION */}

@@ -16,7 +16,7 @@ const EachMedicine = ({medicine}) => {
                         <p> <span className="poppins text-cyan-600">Date of Addition : </span> {dateAdded}</p>
                         {/* <button className="btn btn-basic btn-sm my-2">View Details</button> */}
                         <div>
-                            <Link to={`/medicines/${_id}`} ><button className='btn btn-basic btn-sm my-2' >View Details 2</button></Link>
+                            <Link to={`/medicines/${_id}`} ><button className='btn btn-basic btn-sm my-2' >View Details</button></Link>
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Blogs from "../pages/Blogs/Blogs";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../pages/Profile/Profile";
+import MedicineDetails from "../pages/Home/MedicineDetails";
 
   export const router = createBrowserRouter([
     {
@@ -25,6 +26,13 @@ import Profile from "../pages/Profile/Profile";
         {
             path: '/addMedicine',
             element: <AddMedicine></AddMedicine>
+        },
+        {
+          path: 'medicine/:id',
+          element: <PrivateRoute>
+                      <MedicineDetails></MedicineDetails>
+                   </PrivateRoute>,
+          loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/medicine/${params.id}`)
         },
         {
             path: '/SignUp',

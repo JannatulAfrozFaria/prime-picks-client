@@ -61,3 +61,8 @@ background-image: url(../src/assets/banner/1.PNG);
   border-radius: 100%;
   color: aliceblue;
 }
+
+.option-title{
+  font-weight: 600;
+  color: rgb(67, 238, 238);
+}

@@ -32,7 +32,9 @@ import MedicineDetails from "../pages/Home/MedicineDetails";
           element: <PrivateRoute>
                       <MedicineDetails></MedicineDetails>
                    </PrivateRoute>,
-          loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/medicines/${params.id}`)
+          loader:async ({ params }) => {
+                      return fetch(`https://prime-picks-server.vercel.app/medicines/${params.id}`);
+                    },
         },
         {
             path: '/SignUp',

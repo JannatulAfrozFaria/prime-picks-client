@@ -127,7 +127,7 @@ const MedicineSection = () => {
         <div className="mb-8">
             <Title heading={'Health Essentials'} subHeading={'Here comes our wide range of collection'}></Title>
             {/* Search,Filter Section */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-1 mt-4 mb-8 w-full md:w-3/4 mx-auto items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-1 mt-4 mb-8 w-full md:w-3/4 mx-auto items-center justify-center">
                 {/* SEARCH----OPTION */}
                 {/* <div className="join w-1/3 md:w-full mx-auto col-span-1">
                     <div className="w-full">
@@ -159,7 +159,7 @@ const MedicineSection = () => {
                     {/* FILTER---BY---CATEGORY---OPTION */}
                     <div className="w-full">
                         <details className="dropdown w-full">
-                            <summary className="btn btn-filter w-full">FilterByCategory<IoIosArrowDown /></summary>
+                            <summary className="btn btn-filter w-full">Filter By Category<IoIosArrowDown /></summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box">
                                 <li><Link onClick={()=>handleFilterByCategory('Allergy Relief')}>Allergy Relief</Link></li>
                                 <li><Link onClick={()=>handleFilterByCategory('Antibiotics')}>Antibiotics</Link></li>

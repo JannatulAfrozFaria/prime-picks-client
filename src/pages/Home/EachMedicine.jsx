@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const EachMedicine = ({medicine}) => {
@@ -14,6 +15,9 @@ const EachMedicine = ({medicine}) => {
                         <p> <span className="poppins text-cyan-600">Price: </span>  <span className="poppins text-yellow-600 ">$ </span>{price}</p>
                         <p> <span className="poppins text-cyan-600">Date of Addition : </span> {dateAdded}</p>
                         <button className="btn btn-basic btn-sm my-2">View Details</button>
+                        {/* <div>
+                            <Link to={`/medicine/${id}`} ><button className='btn btn-basic btn-sm my-2' >View Details</button></Link>
+                        </div> */}
                     </div>
                 </div>
             </div>

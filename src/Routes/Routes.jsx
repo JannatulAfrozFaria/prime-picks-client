@@ -35,7 +35,7 @@ import Profile from "../pages/Profile/Profile";
             element: <Login></Login>
         },
         {
-          path: '/blogs',
+          path: '/queries',
           element: <PrivateRoute><Blogs></Blogs></PrivateRoute>
         },
         {

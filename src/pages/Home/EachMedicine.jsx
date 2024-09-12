@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const EachMedicine = ({medicine}) => {
-    const {id,image,medicineName,brandName,categoryName,price,dateAdded} = medicine;
+    const {_id,image,medicineName,brandName,categoryName,price,dateAdded} = medicine;
     return (
         <div className="bg-base-100 w-full shadow-lg shadow-cyan-700">
             <div className="grid grid-cols-5">
@@ -14,10 +14,10 @@ const EachMedicine = ({medicine}) => {
                         <p> <span className="poppins text-cyan-600">Category : </span> {categoryName}</p>
                         <p> <span className="poppins text-cyan-600">Price: </span>  <span className="poppins text-yellow-600 ">$ </span>{price}</p>
                         <p> <span className="poppins text-cyan-600">Date of Addition : </span> {dateAdded}</p>
-                        <button className="btn btn-basic btn-sm my-2">View Details</button>
-                        {/* <div>
-                            <Link to={`/medicine/${id}`} ><button className='btn btn-basic btn-sm my-2' >View Details</button></Link>
-                        </div> */}
+                        {/* <button className="btn btn-basic btn-sm my-2">View Details</button> */}
+                        <div>
+                            <Link to={`/medicines/${_id}`} ><button className='btn btn-basic btn-sm my-2' >View Details 2</button></Link>
+                        </div>
                     </div>
                 </div>
             </div>

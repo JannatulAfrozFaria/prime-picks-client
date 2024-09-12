@@ -28,11 +28,11 @@ import MedicineDetails from "../pages/Home/MedicineDetails";
             element: <AddMedicine></AddMedicine>
         },
         {
-          path: 'medicine/:id',
+          path: 'medicines/:id',
           element: <PrivateRoute>
                       <MedicineDetails></MedicineDetails>
                    </PrivateRoute>,
-          loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/medicine/${params.id}`)
+          loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/medicines/${params.id}`)
         },
         {
             path: '/SignUp',

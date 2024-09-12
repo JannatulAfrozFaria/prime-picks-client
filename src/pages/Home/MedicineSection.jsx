@@ -195,7 +195,7 @@ const MedicineSection = () => {
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box">
                                 <li><Link onClick={sortByLowToHigh}><span className="poppins text-yellow-500">Low to High Price</span></Link></li>
                                 <li><Link onClick={sortByHIghToLow}><span className="poppins text-yellow-500">High to Low Price</span></Link></li>
-                                <li><Link onClick={sortByDateAdded}><span className="poppins text-yellow-500">Addition Date</span></Link></li>
+                                {/* <li><Link onClick={sortByDateAdded}><span className="poppins text-yellow-500">Addition Date</span></Link></li> */}
                             </ul>
                         </details>
                     </div> 
